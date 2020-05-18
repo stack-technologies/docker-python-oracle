@@ -10,6 +10,7 @@ RUN apt-get update \
 
 ADD ./oracle-instantclient/ /opt/data
 ADD ./install-instantclient.sh /opt/data
+ADD ./setup-env.sh /opt/data
 ADD ./requirements.txt /opt/data
 
 WORKDIR /opt/data
